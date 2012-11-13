@@ -2,10 +2,11 @@
 <div class="row">
   <aside class="span4">
     <section>
-      <h1>
-        <%= gravatar_for @user, size: 40 %>
-        <%= @user.name %>
-      </h1>
+      <%= render 'shared/user_info' %>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+      <%= render 'shared/follow_grav' %>
     </section>
   </aside>
   <div class="span8">
